@@ -1,0 +1,158 @@
+@media screen and (min-width: 745px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px ;
+    }
+    .menu {
+        display: none;
+    }
+
+    .navigation {
+        position: static;
+        width: 100%;
+    }
+
+    .navigation ul li {
+        display: inline-block;
+    }
+
+    .navigation ul li a {
+        display: inline-block;
+        width: 140px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .jumbutron {
+        order: -1;
+    }
+    .geografi .penjelasan_gegrafi1{
+        width: 700px;
+    }
+    .geografi{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 456px){
+
+.bermain .play .play_description{
+    width: 15em;
+}
+.sejarah  .conten_sejarah{
+    width: 15em;
+}
+}
+@media only screen and (max-width: 851px) {
+    .start{
+        flex-direction: column;
+        align-items: center;
+    }
+    .titel{
+        order: 1;
+    }
+    .About .penjelasan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .About{
+        margin-top: 15em;
+
+    }
+    .try .angklung{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sejarah{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sejarah .sejarah__angklung{
+        flex-direction: column;
+        align-items: center;
+        right: 10px;
+    }
+    .penjelasan_jabbar{
+        left: 40px;
+    }
+    .sejarah_jabar .penjelasan_jabbar .sejarah_img {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .sejarah_penjelasan{
+        flex-direction: column;
+        align-items: center;
+        width: 35em;
+    }
+    .sejarah_jabar .sejarah_penjelasan p{
+        flex-direction: column;
+        align-items: center;
+        width: 27em;
+    }
+    .geografi{
+        flex-direction: column;
+        align-items: center;
+        width: 30em;
+    }
+    .geografi .penjelasan_gegrafi p{
+        width: 20em;
+    }
+    .budaya_rumah .pakaianadat{
+        flex-direction: column;
+        align-items: center;
+    }
+    .budaya_rumah .rumah{
+        flex-direction: column;
+        align-items: center;
+    }
+        .geografi .penjelasan_gegrafi .peta img{
+            padding: 20px;
+        }
+    .geografi .penjelasan_gegrafi .peta{
+        flex-direction: column;
+        align-items: center;
+    }
+    .penjelasan_jabbar p{
+        
+        text-align: center;
+        width: 35em;
+        left: 40px;
+    }
+    .jabarabout{
+        flex-direction: column;
+        align-items: center;
+    }
+    .About .penjelasan .image {
+        margin-bottom: 20px;
+    }
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .About .penjelasan .content {
+        text-align: center;
+    }
+    .About .row{
+        width: 100%;
+    }
+    .bermain .play .play_description {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bermain .play .play_description img {
+        margin-bottom: 20px;
+    }
+
+    .bermain .play .how-to {
+        text-align: center;
+    }
+    .bermain .play .play_description{
+        width: 100%;
+    }
+}

@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+/* appbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.app-bar {
+    background-color: #c93b03;
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.app-bar .navigation ul li a:hover {
+    color: yellow;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+.active a{
+    color: #FFD93D;
+}
+.brand h1 {
+    color: white;
+    padding: 10px;
+    font-family: 'Chela One', cursive;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+.brand img{
+    width: 45px;
+    height: 75px;
+}
+
+.navigation {
+    position: absolute;
+    top: 60px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.navigation ul {
+    padding: 10px;
+    list-style: none;
+
+}
+
+.navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.open {
+    left: 0;
+}
+.open ul li a{
+    color: #c73c0e;
+    
+}
+.app-bar .navigation .open{
+    padding-top: 30px;
+    left: 0;
+    background-color: #f1f1f1ab;
+    text-align: center;
+    width: 100%;
+}
+
+/* end appbar */
+
+/* main */
+main{
+    background-color: #ff8400;
+    padding-top: 95px;
+    /* background-color: #FF8400; */
+    padding-bottom: 3em;
+}
+.start{ 
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.jumbutron img{
+    margin-left: 4rem;
+    width: 80%;
+    border-radius: 1rem;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 26.4em; 
+    padding-bottom: 20px; 
+}
+.title h2{
+    font-family: 'Chela One',cursive;
+    font-size: 4.5em;
+    color: #F6F1E9;
+    padding-bottom: 20px;
+}
+.isi{
+    width: 40em;
+    display: grid;
+    place-items: center;
+
+}
+.isi p{
+    font-size: 1.2em;
+    color: #4F200D;
+    padding-bottom: 10px;
+}
+.slideshow-container {
+    width: 450px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    left: 10px;
+    border-radius: 1rem;
+    top: 30px;
+}
+.gambar1{
+    background-image:url('/public/slide1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.gambar2{
+    background-image: url('/public/slide2.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.gambar3{
+    background-image: url('/public/slide3.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.gambar4{
+    background-image: url('/public/slide4.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+.slide.active {
+    opacity: 1;
+}
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10em;
+
+}
+.About h1{
+    text-align: center;
+    color: #FFD93D;
+    font-size: 2.5em;
+    
+    padding: 20px;
+}
+span{
+    color: #4F200D;
+}
+.About .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c73c0e;
+    flex-direction: row;
+    width: 75em;
+
+}
+.About .row .image {
+    flex: 1 1 45rem;
+}
+
+.About .row .image img {
+    width: 100%;
+}
+
+.About .row .content {
+    flex: 1 1 45rem;
+    padding: 1rem;
+}
+
+.About .row .content h3 {
+    font-size: 3rem;
+    color: #FFD93D;
+    font-family: 'Chela One',cursive;
+    letter-spacing: 3px;
+}
+
+.About .row .content p {
+    font-size: 1rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+.penjelasan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    color: #4F200D;
+    background: #FFD93D;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+.sejarah{
+    margin-top: 10em;
+    padding: 20px;
+}
+
+.sejarah h3{
+    text-align: center;
+    color: #FFD93D;
+    font-size: 2.5em;
+}
+.sejarah__angklung{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: 30px;
+    justify-content: space-evenly;
+}
+.conten_sejarah{
+    width: 40em;
+}
+.conten_sejarah p{
+    font-size: 1rem;
+    color: #4F200D;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+.jenis h3 {
+    text-align: center;
+    color: #FFD93D;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+.jenis{
+    padding-top: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jenis .jenis_angklung {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.829);
+    text-align: center;
+    font-size: 1em;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #4F200D;
+    padding: 10px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 20px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+    font-size: 9px;
+    text-align: justify;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+.jenis .btn{
+    margin-top: 3em;
+}
+.bermain{
+    margin-top: 12em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+}
+.bermain h3 {
+    text-align: center;
+    color: #FFD93D;
+    font-size: 2.5em;
+}
+.bermain .play .play_description img{
+    width: 30em;
+}
+.play_description {
+    padding-top: 2em;
+    display: flex;
+    flex-direction:row ;
+    background-color: #FFD93D;
+    width: 77em;
+    padding: 10px;
+    
+}
+.play{
+    margin-top: 3em;
+}
+
+.how-to .btn{
+    background-color: #4F200D;
+    color: #FFD93D;
+}
+.play_description .how-to{
+    padding-top: 40px;
+}
+.how-to{
+    font-size: 1.2rem;
+    color: #4F200D;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+.footer {
+    background-color: #4F200D;
+    color: #FFD93D;
+    width: 100%;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2rem 6.7rem;
+
+}
+
+.footer .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.footer .box-container .box h3 {
+    color: var(--white);
+    font-size: 16px;
+    padding-bottom: 1rem;
+}
+
+.footer .box-container .box a {
+    color: var(--light-white);
+    font-size: 14px;
+    padding-bottom: 0.5rem;
+    display: block;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i {
+    color: var(--main-color);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+.copyright {
+    padding: 20px;
+    border-top: .1rem solid #FFD93D;
+
+}
+
+.copyright p {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.copyright i {
+    color: #ec0000;
+}
+.try h1 {
+    padding-top: 1em;
+    text-align: center;
+    color: #FFD93D;
+    font-size: 2.5em;
+}
+.angklung{
+    padding-top: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.angklung h3{
+   font-size: 2em;
+   color: #4F200D; 
+}
+.angklung1 img{
+    width: 11.5em;
+}
+.angklung2 img{
+    width: 10.5em;
+}
+.angklung3 img{
+    width: 9.5em;
+}
+.angklung4 img{
+    width: 8.5em;
+}
+.angklung5 img{
+    width: 7.5em;
+}
+.angklung6 img{
+    width: 6.5em;
+}
+.angklung7 img{
+    width: 5.5em;
+}
+.angklung8 img{
+    width: 4.5em;
+}
+.audio:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+}
+.jabar{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.judul{
+    top: 10px;
+    width: 65em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.judul h1{
+    z-index: 1;
+    color: #4F200D;
+    border: 5px solid #FFD93D;
+    position: absolute;
+    padding: 20px;
+    font-size: 2em;
+}
+.judul img{
+    left: 10em;
+    width: 100%;
+    z-index: 0;
+}
+.jabarabout{
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding-top: 3em;
+    
+}
+.jabarabout img{
+    width: 15em;
+
+}
+.jabarabout .penjelasan_jabbar p span{
+    color: #4F200D;
+    font-family: 'Chela One',cursive;
+    font-size: 2em;
+}
+
+.jabarabout .penjelasan_jabbar{
+    width: 40em;
+    text-align: justify;
+
+}
+.sejarah_jabar {
+    margin-top:5em ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sejarah_jabar h2{
+    color: #4F200D;
+    font-size: 3em;
+}
+.sejarah_penjelasan{
+    width: 80em;
+    margin-top: 2em;
+    background-color: #4F200D;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+
+}
+.sejarah_penjelasan .sejarah_img{
+    padding: 20px;
+}
+.sejarah_penjelasan .sejarah_img img{
+    width: 400px;
+    height: 200px;
+   
+}
+.sejarah_penjelasan p{
+    text-align: justify;
+    line-height: 22px;
+    color: #FFD93D;
+    width: 50em;
+}
+.geografi{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+}
+.geografi h2 {
+    color: #4F200D;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+.peta{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 70em;
+    padding: 20px;
+}
+.peta img{
+    width: 500px;
+    height: 300px;
+    padding-right: 10px;
+}
+.penjelasan_geografi {
+    width: 65em;
+    display: grid;
+    place-items: center;
+    justify-content: space-evenly;
+
+}
+
+.penjelasan_geografi p {
+    font-size: 1.2em;
+    color: #4F200D;
+    padding-bottom: 10px;
+}
+.penjelasan_geografi h3{
+    color: #4F200D;
+    font-size: 2em;
+}
+.rumah{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.budaya_rumah{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5em;
+}
+.budaya_rumah h2{
+    color: #4F200D;
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+.rumah img{
+    width: 30em;
+    height: 300px;
+    padding-top: 20px;
+}
+.penjelasan_rumah{
+    width: 40em;
+}
+.rumah p{
+    padding: 10px;
+    font-size: 1.2em;
+    color: #4F200D;
+    padding-bottom: 10px;
+
+}
+.pakaianadat img {
+    width: 30em;
+    height: 300px;
+    padding-top: 20px;
+}
+.pakaianadat{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.penjelasan_pakaianadat p {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #4F200D;
+
+}
+.penjelasan_pakaianadat {
+    width: 40em;
+}

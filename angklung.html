@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ANGKLUNG">
+        <link rel="icon" href="public/angklung.jpg">
+        <title>ANGKLUNG</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" />
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <!-- header -->
+
+        <header>
+            <div class="app-bar">
+                <div class="menu">
+                    <button id="hamburgerButton">☰</button>
+                </div>
+                <div class="brand">
+                    <h1>ANGKLUNG</h1>
+                    <img src="public/angklung-removebg-preview.png" alt="angklung gambar">
+                </div>
+                <nav id="Drawer" class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="angklung.html">Angklung</a></li>
+                        <li><a href="jabar.html">Jawa barat</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- end header -->
+
+        <main>
+            <section class="try">
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <h1>Mari Bermain <span>Angklung</span></h1>
+                </div>
+                <div class="angklung" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="audio angklung1" data-sound="public/audio/do.mp3">
+                        <h3>Do</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+
+                    </div>
+                    <div class="audio angklung2" data-sound="public/audio/re.mp3">
+                        <h3>Re</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+
+                    </div>
+                    <div class="audio angklung3" data-sound="public/audio/mi.mp3">
+                        <h3>Mi</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+
+                    </div>
+                    <div class="audio angklung4" data-sound="public/audio/fa.mp3">
+                        <h3>Fa</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+
+                    </div>
+                    <div class="audio audio angklung5" data-sound="public/audio/so.mp3">
+                        <h3>Sol</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+
+                    </div>
+                    <div class="audio angklung6" data-sound="public/audio/la.mp3">
+                        <h3>La</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+
+                    </div>
+                    <div class="audio angklung7" data-sound="public/audio/si.mp3">
+                        <h3>Si</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+                    </div>
+                    <div class="audio angklung8" data-sound="public/audio/do_cilik.mp3">
+                        <h3>Do</h3>
+                        <img src="public/angklung-removebg-preview.png" alt="Angklung">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+
+        <footer class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Link Utama</h3>
+                    <a href="index.html"> <i class="fas fa-angle-right"></i> Home</a>
+                    <a href="angklung.html"> <i class="fas fa-angle-right"></i>Angklung</a>
+                    <a href="jabar.html"> <i class="fas fa-angle-right"></i> Jawa barat</a>
+                </div>
+
+                <div class="box">
+                    <h3>Info Kontak</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> +62811112225</a>
+                    <a href="#"> <i class="fas fa-phone"></i> +62851111222 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> fanditok16@gmail.com </a>
+                </div>
+
+                <div class="box">
+                    <h3>Follow Me</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                    <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                    <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Created With <i class="fa-solid fa-heart fa-beat"></i> By Fandi</p>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            const angklungElements = document.querySelectorAll( '.audio' );
+
+            angklungElements.forEach( ( element ) =>
+            {
+                const soundFile = element.dataset.sound;
+                element.addEventListener( 'mouseover', () =>
+                {
+                    playSound( soundFile );
+                    element.classList.add( 'playing' );
+                } );
+                element.addEventListener( 'mouseout', () =>
+                {
+                    element.classList.remove( 'playing' );
+                } );
+            } );
+
+            function playSound ( soundFile )
+            {
+                const audio = new Audio( soundFile );
+                audio.play();
+            }
+
+        </script>
+    </body>
+
+</html>
